@@ -12,6 +12,11 @@ api_key = os.getenv('API_KEY')
 
 
 app = Flask(__name__)
+@app.route('/', methods=['GET'])
+def hello():
+    return "<h1 style='color:blue'>Hello There!</h1>"
+
+
 
 @app.route('/chat', methods=['POST'])
 def chat():
