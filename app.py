@@ -40,6 +40,7 @@ def chat():
     response_text = response
 
     # Return the response text
+    print(response_text)
     return jsonify({'response': response_text})
 
 if __name__ == '__main__':
