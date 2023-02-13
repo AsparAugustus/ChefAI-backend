@@ -36,8 +36,8 @@ def chat():
     )
 
     # Get the response text
-    # response_text = response['choices'][0]['text']
-    response_text = response
+    response_text = response['choices'][0]['text']
+    # response_text = response
 
     # Return the response text
     print(response_text)
